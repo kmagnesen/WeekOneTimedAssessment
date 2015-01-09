@@ -14,6 +14,7 @@
 		F99ABD971A60392D00BA4276 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99ABD961A60392D00BA4276 /* Images.xcassets */; };
 		F99ABD9A1A60392D00BA4276 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99ABD981A60392D00BA4276 /* LaunchScreen.xib */; };
 		F99ABDA61A60392E00BA4276 /* WeekOneTimedAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F99ABDA51A60392E00BA4276 /* WeekOneTimedAssessmentTests.m */; };
+		F99ABDB11A603F9E00BA4276 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99ABDB01A603F9E00BA4276 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F99ABD9F1A60392D00BA4276 /* WeekOneTimedAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekOneTimedAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99ABDA41A60392E00BA4276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F99ABDA51A60392E00BA4276 /* WeekOneTimedAssessmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekOneTimedAssessmentTests.m; sourceTree = "<group>"; };
+		F99ABDAF1A603F9E00BA4276 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		F99ABDB01A603F9E00BA4276 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				F99ABD901A60392D00BA4276 /* RootViewController.h */,
 				F99ABD911A60392D00BA4276 /* RootViewController.m */,
 				F99ABD931A60392D00BA4276 /* Main.storyboard */,
+				F99ABDAF1A603F9E00BA4276 /* WebViewController.h */,
+				F99ABDB01A603F9E00BA4276 /* WebViewController.m */,
 				F99ABD961A60392D00BA4276 /* Images.xcassets */,
 				F99ABD981A60392D00BA4276 /* LaunchScreen.xib */,
 				F99ABD891A60392D00BA4276 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				F99ABD921A60392D00BA4276 /* RootViewController.m in Sources */,
 				F99ABD8F1A60392D00BA4276 /* AppDelegate.m in Sources */,
 				F99ABD8C1A60392D00BA4276 /* main.m in Sources */,
+				F99ABDB11A603F9E00BA4276 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

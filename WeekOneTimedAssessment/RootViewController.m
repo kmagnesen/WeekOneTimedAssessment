@@ -7,17 +7,20 @@
 //
 
 #import "RootViewController.h"
+#import "WebViewController.h"
 
 @interface RootViewController ()
-
-@property (strong, nonatomic) IBOutlet UIView *valueOneTextField;
-@property (strong, nonatomic) IBOutlet UIView *valueTwoTextView;
+@property (strong, nonatomic) IBOutlet UITextField *valueOneTextField;
+@property (strong, nonatomic) IBOutlet UITextField *valueTwoTextField;
 
 @property (strong, nonatomic) IBOutlet UILabel *multiplyLabel;
 @property (strong, nonatomic) IBOutlet UINavigationItem *navBar;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *webBarButton;
 
 @property NSString *multiply;
 @property NSString *answerDisplay;
+@property int answer;
+
 
 @end
 
@@ -27,23 +30,27 @@
     [super viewDidLoad];
 
 }
+
 - (IBAction)onCalcButtonTapped:(UIButton *)sender {
 
-//    [self.view endEditing:YES];
+    [self.view endEditing:YES];
 
-    int answer;
-
-    NSString *userFirstEntry = [self.valueOneTextField textInputContextIdentifier];
+    NSString *userFirstEntry = [self.valueOneTextField text];
     int firstEntry = [userFirstEntry intValue];
-    NSString *userSecondEntry = [self.valueTwoTextView textInputContextIdentifier];
+    NSString *userSecondEntry = [self.valueTwoTextField text];
     int secondEntry = [userSecondEntry intValue];
 
-    answer = firstEntry * secondEntry;
+    self.answer = firstEntry * secondEntry;
 
-    self.answerDisplay = [NSString stringWithFormat:@"%d", answer];
+    self.navBar.title = [NSString stringWithFormat:@"%d", self.answer];
 
-    self.navBar.title = [NSString stringWithFormat:@"%@", self.answerDisplay];
-    
+//    if (self.answer % 5 == 0) {
+//        [self webBarButton.
+//    }
+// cannot seem to figure out how to get the multiple of five to activate and deactive navBarButton!!!
+    }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender{
 
 }
 
